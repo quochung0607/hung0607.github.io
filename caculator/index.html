@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Caculator</title>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calc-body">
+          <div class="calc-screen">
+            
+            <div class="calc-operation"></div>
+          </div>
+          <div class="calc-button-row">
+            <div id="getValue" class="button c"  data-value="0"  onclick="clearScreen()" >C</div>
+            <div id="getValue" class="button l"  data-value="0"  >≠</div>
+            <div id="getValue" class="button l"  data-value="/"  onclick="onOperationClick(this)">%</div>
+            <div id="getValue" class="button l"  data-value="divide"  onclick="onOperationClick(this)">/</div>
+          </div>
+          <div class="calc-button-row">
+            <div id="getValue" class="button"  data-value="7" onclick="clickButtonValue(this)" >7</div>
+            <div id="getValue" class="button"  data-value="8" onclick="clickButtonValue(this)" >8</div>
+            <div id="getValue" class="button"  data-value="9" onclick="clickButtonValue(this)" >9</div>
+            <div id="getValue" class="button l"  data-value="multiply" onclick="onOperationClick(this)" >x</div>
+          </div>
+          <div class="calc-button-row">
+            <div id="getValue" class="button"  data-value='4' onclick="clickButtonValue(this)" >4</div>
+            <div id="getValue" class="button"  data-value="5" onclick="clickButtonValue(this)" >5</div>
+            <div id="getValue" class="button"  data-value="6" onclick="clickButtonValue(this)" >6</div>
+            <div class="button l"  data-value="substract"  onclick="onOperationClick(this)">−</div>
+          </div>
+          <div class="calc-button-row">
+            <div id="getValue" class="button"  data-value="1" onclick="clickButtonValue(this)" >1</div>
+            <div id="getValue" class="button"  data-value="2" onclick="clickButtonValue(this)" >2</div>
+            <div id="getValue" class="button"  data-value="3" onclick="clickButtonValue(this)" >3</div>
+            <div id="getValue" class="button l"  data-value="add" onclick="onOperationClick(this)">+</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button">.</div>
+            <div id="getValue" class="button" data-value="0" onclick="clickButtonValue(this)" >0</div>
+            <div class="button">
+              <</div>
+                <div class="button l" data-value="equal" onclick="onOperationClick(this)">=</div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
